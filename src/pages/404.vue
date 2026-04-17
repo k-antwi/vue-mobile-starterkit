@@ -7,6 +7,6 @@
     </f7-block>
   </f7-page>
 </template>
-<script>
+<script lang="ts">
 export default {};
 </script>

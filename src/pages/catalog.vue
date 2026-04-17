@@ -14,15 +14,15 @@
     </f7-block>
   </f7-page>
 </template>
-<script>
+<script lang="ts">
 import { useStore } from 'framework7-vue';
-import store from '../js/store';
+import store from '../ts/store';
 
 export default {
   setup() {
     const products = useStore('products');
 
-    const addProduct = () => {
+    const addProduct = (): void => {
       store.dispatch('addProduct', {
         id: '4',
         title: 'Apple iPhone 12',

@@ -30,11 +30,11 @@
     </f7-block>
   </f7-page>
 </template>
-<script>
+<script lang="ts">
 export default {
   props: {
-    f7route: Object,
-    f7router: Object,
+    f7route: { type: Object, required: true as const },
+    f7router: { type: Object, required: true as const },
   },
 };
 </script>

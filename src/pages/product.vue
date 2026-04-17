@@ -7,24 +7,27 @@
     </f7-block>
   </f7-page>
 </template>
-<script>
+<script lang="ts">
 import { useStore } from 'framework7-vue';
+import type { Product } from '../ts/store';
 
 export default {
   props: {
-    f7route: Object,
+    f7route: { type: Object, required: true as const },
   },
-  setup(props) {
+  setup(props: { f7route: any }) {
     const products = useStore('products');
     const productId = props.f7route.params.id;
-    let currentProduct;
-    products.value.forEach(function (product) {
+    let currentProduct: Product | undefined;
+
+    products.value.forEach((product: Product) => {
       if (product.id === productId) {
         currentProduct = product;
       }
     });
+
     return {
-      product: currentProduct,
+      product: currentProduct!,
     };
   },
 };

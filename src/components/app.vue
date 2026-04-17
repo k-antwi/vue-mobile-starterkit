@@ -93,47 +93,38 @@
   </f7-app>
   </k-provider>
 </template>
-<script>
+<script lang="ts">
   import { ref, onMounted } from 'vue';
   import { f7, f7ready } from 'framework7-vue';
   import { kProvider } from 'konsta/vue';
 
-
-  import routes from '../js/routes.js';
-  import store from '../js/store';
+  import routes from '../ts/routes';
+  import store from '../ts/store';
 
   export default {
     components: { kProvider },
     setup() {
-
-      // Framework7 Parameters
       const f7params = {
-        name: 'Vue Mobile Starter', // App name
-        theme: 'auto', // Automatic theme detection
+        name: 'Vue Mobile Starter',
+        theme: 'auto',
         colors: {
           primary: '#772F1A',
         },
-
-
-
-        // App store
-        store: store,
-        // App routes
-        routes: routes,
+        store,
+        routes,
       };
-      // Login screen data
+
       const username = ref('');
       const password = ref('');
 
-      const alertLoginData = () => {
+      const alertLoginData = (): void => {
         f7.dialog.alert('Username: ' + username.value + '<br>Password: ' + password.value, () => {
           f7.loginScreen.close();
         });
-      }
+      };
+
       onMounted(() => {
         f7ready(() => {
-
-
           // Call F7 APIs here
         });
       });
@@ -142,8 +133,8 @@
         f7params,
         username,
         password,
-        alertLoginData
-      }
-    }
-  }
+        alertLoginData,
+      };
+    },
+  };
 </script>

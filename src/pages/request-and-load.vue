@@ -16,10 +16,10 @@
     </f7-list>
   </f7-page>
 </template>
-<script>
+<script lang="ts">
 export default {
   props: {
-    user: Object,
+    user: { type: Object, required: true as const },
   },
 };
 </script>
