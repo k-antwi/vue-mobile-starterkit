@@ -1,0 +1,18 @@
+{
+  "cwd": "/Users/k-antwi/webdev/ksoft/vue-mobile-starterkit",
+  "type": [
+    "web"
+  ],
+  "name": "Vue Mobile Starter",
+  "framework": "vue",
+  "template": "tabs",
+  "cssPreProcessor": "scss",
+  "bundler": "vite",
+  "theming": {
+    "customColor": true,
+    "color": "#772F1A",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}
