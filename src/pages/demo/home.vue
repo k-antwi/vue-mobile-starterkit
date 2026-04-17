@@ -20,8 +20,8 @@
     </f7-block>
     <f7-block-title>Navigation</f7-block-title>
     <f7-list strong inset dividersIos>
-      <f7-list-item link="/about/" title="About"></f7-list-item>
-      <f7-list-item link="/form/" title="Form"></f7-list-item>
+      <f7-list-item link="/demo/about/" title="About"></f7-list-item>
+      <f7-list-item link="/demo/form/" title="Form"></f7-list-item>
     </f7-list>
 
     <f7-block-title>Modals</f7-block-title>
@@ -39,7 +39,7 @@
     <f7-list strong inset dividersIos>
       <f7-list-item
         title="Dynamic (Component) Route"
-        link="/dynamic-route/blog/45/post/125/?foo=bar#about"
+        link="/demo/dynamic-route/blog/45/post/125/?foo=bar#about"
       ></f7-list-item>
       <f7-list-item
         title="Default Route (404)"
@@ -47,7 +47,7 @@
       ></f7-list-item>
       <f7-list-item
         title="Request Data & Load"
-        link="/request-and-load/user/123456/"
+        link="/demo/request-and-load/user/123456/"
       ></f7-list-item>
     </f7-list>
   </f7-page>

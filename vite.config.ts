@@ -21,6 +21,7 @@ export default defineConfig({
   ],
   root: SRC_DIR,
   base: '',
+  envDir: path.resolve(__dirname),
   publicDir: PUBLIC_DIR,
   build: {
     outDir: BUILD_DIR,

@@ -6,7 +6,7 @@
         v-for="product in products"
         :key="product.id"
         :title="product.title"
-        :link="`/product/${product.id}/`"
+        :link="`/demo/product/${product.id}/`"
       ></f7-list-item>
     </f7-list>
     <f7-block v-if="products.length === 3">
@@ -16,7 +16,7 @@
 </template>
 <script lang="ts">
 import { useStore } from 'framework7-vue';
-import store from '../ts/store';
+import store from '../../ts/store';
 
 export default {
   setup() {

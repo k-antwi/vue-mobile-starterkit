@@ -9,7 +9,7 @@
 </template>
 <script lang="ts">
 import { useStore } from 'framework7-vue';
-import type { Product } from '../ts/store';
+import type { Product } from '../../ts/store';
 
 export default {
   props: {

@@ -1,12 +1,12 @@
-import HomePage from '../pages/home.vue';
-import AboutPage from '../pages/about.vue';
-import FormPage from '../pages/form.vue';
-import CatalogPage from '../pages/catalog.vue';
-import ProductPage from '../pages/product.vue';
-import SettingsPage from '../pages/settings.vue';
-import DynamicRoutePage from '../pages/dynamic-route.vue';
-import RequestAndLoad from '../pages/request-and-load.vue';
-import NotFoundPage from '../pages/404.vue';
+import HomePage from '../pages/demo/home.vue';
+import AboutPage from '../pages/demo/about.vue';
+import FormPage from '../pages/demo/form.vue';
+import CatalogPage from '../pages/demo/catalog.vue';
+import ProductPage from '../pages/demo/product.vue';
+import SettingsPage from '../pages/demo/settings.vue';
+import DynamicRoutePage from '../pages/demo/dynamic-route.vue';
+import RequestAndLoad from '../pages/demo/request-and-load.vue';
+import NotFoundPage from '../pages/demo/404.vue';
 
 interface RouteUser {
   firstName: string;
@@ -27,31 +27,31 @@ const routes = [
     component: HomePage,
   },
   {
-    path: '/about/',
+    path: '/demo/about/',
     component: AboutPage,
   },
   {
-    path: '/form/',
+    path: '/demo/form/',
     component: FormPage,
   },
   {
-    path: '/catalog/',
+    path: '/demo/catalog/',
     component: CatalogPage,
   },
   {
-    path: '/product/:id/',
+    path: '/demo/product/:id/',
     component: ProductPage,
   },
   {
-    path: '/settings/',
+    path: '/demo/settings/',
     component: SettingsPage,
   },
   {
-    path: '/dynamic-route/blog/:blogId/post/:postId/',
+    path: '/demo/dynamic-route/blog/:blogId/post/:postId/',
     component: DynamicRoutePage,
   },
   {
-    path: '/request-and-load/user/:userId/',
+    path: '/demo/request-and-load/user/:userId/',
     async: ({ router, to, resolve }: RouteParams) => {
       const app = router.app;
       app.preloader.show();

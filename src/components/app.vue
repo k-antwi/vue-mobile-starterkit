@@ -39,10 +39,10 @@
     <f7-view id="view-home" main tab tab-active url="/"></f7-view>
 
     <!-- Catalog View -->
-    <f7-view id="view-catalog" name="catalog" tab url="/catalog/"></f7-view>
+    <f7-view id="view-catalog" name="catalog" tab url="/demo/catalog/"></f7-view>
 
     <!-- Settings View -->
-    <f7-view id="view-settings" name="settings" tab url="/settings/"></f7-view>
+    <f7-view id="view-settings" name="settings" tab url="/demo/settings/"></f7-view>
 
   </f7-views>
 
