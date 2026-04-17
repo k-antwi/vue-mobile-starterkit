@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import path from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
@@ -36,5 +37,10 @@ export default defineConfig({
   },
   server: {
     host: true,
+  },
+  test: {
+    environment: 'jsdom',
+    include: ['**/*.{test,spec}.{ts,tsx}'],
+    root: SRC_DIR,
   },
 });
